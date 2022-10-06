@@ -14,10 +14,10 @@
         </header>
         <!-- Navbar -->
         <nav>
-            <h2><a href="#">About Me</a></h2>
-            <h2><a href="#">Work</a></h2>
-            <h2><a href="#">Contact</a></h2>
-            <h2><a href="#">Resume</a></h2>
+            <h2><a href="#aboutme">About Me</a></h2>
+            <h2><a href="#work">Work</a></h2>
+            <h2><a href="#contact">Contact</a></h2>
+            <h2><a href="#resume">Resume</a></h2>
         </nav>
         <hero>
             <img src="./assets/Images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="lit up circuit board" />
@@ -26,19 +26,23 @@
         <main>
             <!-- Sidebar -->
             <aside>
-                <h2>About Me</h2>
-                <h2>Work</h2>
-                <h2>Contact</h2>
-                <h2>Resume</h2>
+                <h2 id="about">About Me</h2>
+                <h2 id="work">Work</h2>
+                <h2 id="contact">Contact</h2>
+                <h2 id="resume">Resume</h2>
             </aside>
             <!-- Content -->
             <div>
                 <!-- About Me -->
-                <section>
-                    <p>Lorem Ipsum blah blah blah</p>
+                <section id="description">
+                    <p>Elizabeth is a hardworking early career professional looking to work in software engineering, 
+                        changing how the world does business. She exhibits strong technical skills and in-depth knowledge 
+                        of the software development life cycle and Agile techniques as well as strong written and verbal 
+                        communication skills. Additionally, she has teamwork experience and well-developed independent time 
+                        management and problem-solving skills.</p>
                 </section>
                 <!-- Work -->
-                <section>
+                <section id="projects">
                     <!-- Boxes for each work -->
                     <section class="worklinks">
                         <h3>CSS Snippets</h3>
@@ -48,23 +52,19 @@
                         <h3>Battleship</h3>
                         <img src="./assets/Images/thomas-park-C57lmA3a5zY-unsplash.jpg" alt="miliatry battleship" id="workimg" />
                     </section>
-                    <section class="worklinks">
-                        <h3>Placeholder</h3>
-                        <img src="./assets/Images/altumcode-dMUt0X3f59Q-unsplash.jpg" alt="laptop on desk" id="workimg" />
-                    </section class="worklinks">
                 </section>
                 <!-- Contact -->
-                <section>
+                <section id="contactlinks">
                     <!-- Phone number, email, GitHub. LinkedIn (I don't have Twitter) -->
                     <ul>
                         <li>Phone: (603) 944-7306</li>
                         <li>Email: <a href="mailto: ekphilbrook@gmail.com">ekphilbrook@gmail.com</a></li>
                         <li>GitHub: <a href="github.com">Zeizil</a></li>
-                        <li><a href="https://www.linkedin.com/in/elizabeth-philbrook/">LinkedIn Profile</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-philbrook/">Profile</a></li>
                     </ul>
                 </section>
                 <!-- Resume -->
-                <section>
+                <section id="resumedownload">
                     <!-- link downloadable pdf of most up-to-date resume -->
                     <h3><a href="./assets/EKPhilbrookResume.pdf" download="EKPhilbrookResume">Download Resume</a></h3>
                 </section>

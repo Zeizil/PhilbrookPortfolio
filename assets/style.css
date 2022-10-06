@@ -12,8 +12,7 @@
   }
 
   hero {
-    height: 400px;
-    width: fit-content;
+    height: 300px;
   }
 
   body {
@@ -23,6 +22,12 @@
     min-height: 100vh;
     justify-content: flex-start;
     background-color: var(--gray);
+  }
+
+  div{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   
   h1 {
@@ -46,7 +51,7 @@
   p{
     font-size: medium;
     margin: 20px;
-    color: var(--white)
+    color: var(--white);
   }
 
   header {
@@ -69,15 +74,18 @@
   }
 
   aside{
-    flex: .3;
+    flex: .2;
     background-color: var(--purple);
     padding: 20px;
   }
   
   aside h2{
     font-size: 4rem;
-    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
+
+  
   
   footer {
     width: 100%;
@@ -91,10 +99,67 @@
 
   section{
     position: relative;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    color: var(--white);
+    padding: 14px 20px;
+    text-align: center;
+  }
+
+  ul a{
+    text-decoration: none;
+    color: var(--purple)
   }
 
   li{
     font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  #about {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+  }
+
+  #work {
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+  }
+
+  #contact {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+  }
+
+  #resume {
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+  }
+
+  #description {
+    width: 1500px;
+    padding: 5rem;
+  }
+
+  #projects {
+    position: relative;
+    display: flex;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  #contactlinks {
+    width: 1500px;
+    padding: 5rem;
+  }
+
+  #resumedownload {
+    width: 1500px;
+    padding: 5rem;
   }
 
   .worklinks{
@@ -102,10 +167,10 @@
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 10px;
-    margin: 30px;
+    margin: 10px;
     flex: 0 0 300px;
   }
 
