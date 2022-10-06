@@ -85,18 +85,6 @@
     margin-bottom: 5rem;
   }
 
-  
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: var(--gray);
-    color: var(--white);
-    margin-top: auto;
-  }
-
   section{
     position: relative;
     margin-bottom: 20px;
@@ -147,7 +135,7 @@
   #projects {
     position: relative;
     display: flex;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -159,7 +147,8 @@
 
   #resumedownload {
     width: 1500px;
-    padding: 5rem;
+    padding-left: 6rem;
+    padding-top: 5rem;
   }
 
   .worklinks{
