@@ -1,0 +1,162 @@
+:root{
+    --gray: #787f82;
+    --white: #fff;
+    --purple: rgb(158, 43, 186);
+    --indigo: rgb(135, 61, 231);
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gray);
+  }
+
+  hero {
+    height: 400px;
+    width: fit-content;
+  }
+
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--gray);
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+
+  h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--white);
+  }
+
+  h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+
+  p{
+    font-size: medium;
+    margin: 20px;
+    color: var(--white)
+  }
+
+  header {
+    padding: 40px;
+    text-align: left;
+    background: var(--gray);
+    color: var(--white);
+  }
+
+  nav{
+    display: flex;
+    background-color: (--purple);
+  }
+
+  nav a{
+    color: var(--white);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  aside{
+    flex: .3;
+    background-color: var(--purple);
+    padding: 20px;
+  }
+  
+  aside h2{
+    font-size: 4rem;
+    margin-bottom: 10rem;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--gray);
+    color: var(--white);
+    margin-top: auto;
+  }
+
+  section{
+    position: relative;
+  }
+
+  li{
+    font-size: 1.5rem;
+  }
+
+  .worklinks{
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 30px;
+    flex: 0 0 300px;
+  }
+
+  .worklinks h3{
+    color: var(--purple);
+    background-color: var(--white);
+    padding: 5px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
+  #workimg{
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+  }
+
+  .copy {
+    font-family: monospace;
+    text-align: left;
+    border-style: none;
+    background: linear-gradient(0deg, var(--purple), var(--indigo));
+    color: var(--white)
+  }
+
+  .snippet h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    border-color: var(--white);
+    position: relative;
+    margin-top: -30px;
+    background-color: var(--gray);
+  }
+  
+  @media screen and (max-width: 992px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+}
