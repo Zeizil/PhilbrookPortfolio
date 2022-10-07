@@ -1,69 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Colors used for theme */
 :root{
     --gray: #787f82;
     --white: #fff;
-    --purple: rgb(158, 43, 186);
-    --indigo: rgb(135, 61, 231);
+    --purple: rgb(112, 44, 201);
   }
 
-  main {
+  html {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--gray);
+    flex-direction: column;
   }
 
-  hero {
-    height: 300px;
-  }
-
+  /* Body */
   body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-width: 100vh;
     justify-content: flex-start;
     background-color: var(--gray);
   }
 
-  div{
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  h1 {
-    font-size: 5rem;
-    margin-bottom: 10px;
-    color: var(--purple);
-  }
-
-  h2{
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: var(--white);
-  }
-
-  h3{
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: var(--purple);
-  }
-
-  p{
-    font-size: medium;
-    margin: 20px;
-    color: var(--white);
-  }
-
+  /* Header */
   header {
     padding: 40px;
     text-align: left;
     background: var(--gray);
-    color: var(--white);
   }
 
+  /* Nav section */
   nav{
     display: flex;
-    background-color: (--purple);
   }
 
   nav a{
@@ -73,23 +45,81 @@
     text-align: center;
   }
 
+  /* Banner picture */
+  hero img{
+    height: auto;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+/* Main */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-image: linear-gradient(var(--gray), lightgray);
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Text styles */
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: var(--purple);
+  }
+
+  h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--white);
+  }
+
+  h3 a{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--purple);
+  }
+
+  p{
+    font-size: 18px;
+    margin: 20px;
+    color: var(--white);
+  }
+  
+  /* Content */
   aside{
     flex: .2;
     background-color: var(--purple);
-    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
   }
   
   aside h2{
-    font-size: 4rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 10%;
+    text-align: center;
   }
 
-  section{
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin-bottom: 20px;
+    flex: 1 1 auto;
   }
-
+  
+  /* List formatting */
   ul {
     display: flex;
     color: var(--white);
@@ -99,7 +129,7 @@
 
   ul a{
     text-decoration: none;
-    color: var(--purple)
+    color: var(--purple);
   }
 
   li{
@@ -107,110 +137,128 @@
     margin-right: 2rem;
   }
 
+  /* IDs */
+
+  /* Aside Labels */
   #about {
-    padding-bottom: 5rem;
-    padding-left: 5rem;
+    margin-bottom: 100%;
   }
 
   #work {
-    padding-bottom: 10rem;
-    padding-left: 5rem;
+    margin-bottom: 350%;
   }
 
   #contact {
-    padding-bottom: 5rem;
-    padding-left: 5rem;
+    margin-bottom: 100%;
   }
 
   #resume {
-    padding-bottom: 5rem;
-    padding-left: 5rem;
+    margin-bottom: 100%;
   }
 
+  /* Content */
   #description {
-    width: 1500px;
-    padding: 5rem;
+    width: 100%;
+    margin-top: .1%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #projects {
     position: relative;
     display: flex;
-    padding-bottom: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
   }
 
   #contactlinks {
-    width: 1500px;
-    padding: 5rem;
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #resumedownload {
-    width: 1500px;
-    padding-left: 6rem;
-    padding-top: 5rem;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
+  /* Classes and associated IDs */
   .worklinks{
+    position: relative;
     flex: 4;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content:center;
+    align-items: baseline;
     padding: 10px;
     margin: 10px;
     flex: 0 0 300px;
   }
 
-  .worklinks h3{
+  #firstimg {
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+    position: relative;
+  }
+
+  #firsttitle {
+    position: absolute;
     color: var(--purple);
     background-color: var(--white);
     padding: 5px;
-    position: absolute;
-    bottom: 8px;
+    bottom: 10%;
     right: 16px;
   }
 
-  #workimg{
+  #workimg {
     border: 1px solid var(--purple);
     border-radius: 4px;
     padding: 5px;
     width: 400px;
-  }
-
-  .copy {
-    font-family: monospace;
-    text-align: left;
-    border-style: none;
-    background: linear-gradient(0deg, var(--purple), var(--indigo));
-    color: var(--white)
-  }
-
-  .snippet h2{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--purple);
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 25px;
-    border-color: var(--white);
     position: relative;
-    margin-top: -30px;
-    background-color: var(--gray);
+  }
+
+  #worktitle {
+    position: absolute;
+    color: var(--purple);
+    background-color: var(--white);
+    padding: 5px;
+    bottom: 25%;
+    right: 16px;
   }
   
+/* Responsive */
+  @media screen and (max-width: 1885){
+    main{
+        flex-direction: column;
+    }
+  }
   @media screen and (max-width: 992px) {
     main,
     nav {
       flex-direction: column;
+    }
+    img {
+        width: 50%;
     }
   }
   @media screen and (max-width: 768px) {
     main,
     nav {
       flex-direction: column;
+    }
+    img {
+        width: 100%;
     }
 }
