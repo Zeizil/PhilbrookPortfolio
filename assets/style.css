@@ -28,7 +28,7 @@
 
   /* Header */
   header {
-    padding: 40px;
+    padding: 10px;
     text-align: left;
     background: var(--gray);
   }
@@ -166,6 +166,16 @@
     flex-wrap: wrap;
   }
 
+  /* Avatar profile picture */
+  #pumpkinavatar {
+    max-height: 100px;
+    max-width: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
   #projects {
     position: relative;
     display: flex;
@@ -239,26 +249,22 @@
   }
   
 /* Responsive */
-  @media screen and (max-width: 1885){
-    main{
-        flex-direction: column;
-    }
-  }
   @media screen and (max-width: 992px) {
     main,
     nav {
       flex-direction: column;
     }
-    img {
-        width: 50%;
+    aside {
+        flex-direction: row;
+    }
+    #about, #work, #contact, #resume {
+        margin-bottom: 10%;
+        margin-right: 10%;
     }
   }
   @media screen and (max-width: 768px) {
     main,
     nav {
       flex-direction: column;
-    }
-    img {
-        width: 100%;
     }
 }
