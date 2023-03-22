@@ -45,14 +45,6 @@
     text-align: center;
   }
 
-  /* Banner picture */
-  hero img{
-    height: auto;
-    width: 100%;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
 /* Main */
   main {
     display: flex;
@@ -205,6 +197,10 @@
     border: 1px solid var(--purple);
     border-width: 4px;
     border-radius: 4px;
+    height: auto;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   /* Classes and associated IDs */
